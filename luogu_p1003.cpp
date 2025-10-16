@@ -16,15 +16,14 @@ int main() {
     }
     int  x , y;
     cin >> x >> y;
-    for(int i=n;i>0;i--){
-        if((a[i]+g[i])>=x && a[i]<=x){
-            if((b[i]+k[i])>=y && b[i]<=y){
-                cout<<i;
+    for (int i = n ;i > 0 ;i--){
+        if ((a[i]+g[i]) >= x && a[i] <= x){
+            if ((b[i]+k[i]) >= y && b[i] <= y){
+                cout << i;
                 return 0;
             }
         }
     }
     cout<<"-1";
-
     return 0;
 }
