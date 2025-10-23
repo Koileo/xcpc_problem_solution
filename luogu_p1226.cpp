@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-//快速幂
+//快速幂(模版)
 int fast_v(long long base ,long long exp,long long mod){
     long long result =1;
     base %= mod;

@@ -10,7 +10,7 @@ int main() {
     vector<long long> a(n + 1);
     for (int i = 0; i <= n; ++i) cin >> a[i];
 
-    bool printed = false; // 是否已经输出过一项
+    bool printed = false;
     for (int i = 0; i <= n; ++i) {
         long long c = a[i];
         int p = n - i;              // 幂次：从 n 到 0
@@ -25,7 +25,6 @@ int main() {
 
         long long abs_c = llabs(c);
 
-        // 系数与变量部分
         if (p == 0) {
             // 常数项：直接打印数值
             cout << abs_c;
