@@ -31,7 +31,7 @@ int main() {
         for (long long p : primes) {
             bool exists_not_divisible = false;
             for (int i = 0; i < n; ++i) {
-                if (num[i] % p != 0ULL) { // 只要有一个不被 p 整除，就可以取 x = p
+                if (num[i] % p != 0) {
                     exists_not_divisible = true;
                     break;
                 }
